@@ -6,122 +6,15 @@
     <title></title>
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
    	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
    	<style type="text/css">
-		.clearfix:after{
-			display: block;
-			content: " ";
-			height: 0;
-			clear: both;
-			overflow: hidden;
-		}
-   		html,body,.wrapMask{
-			width: 100%;
-			height: 100%;
-   		}
-   		.wrapMask{
-   			position: absolute;
-   			top: 0;
-   			left: 0;
-   			width: 100%;
-   			height:92%;
-   			background-color: #f7f7f7;
-   			z-index: 3;
-   		}
-   		.wrapMask>div{
-   			display: none;
-   			margin-top: 15px;
-   		}
-   		.cityLists{
-   			line-height: 40px;
-   			font-size: 14px;
-   			color:black; 
-   		}
-   		.cityLists p{
-   			color:black; 
-   			text-indent: 2rem;
-   			border-bottom: 1px solid #ccc;
-   		}
-   		.cityLists>p:nth-of-type(2){
-   			background-color: #ccc;
-   			margin-top: 3rem;
-   		}
-   		.cityLists ul{
-   			list-style: none;
-   			margin-left: -3rem;
-   		}
-   		.cityLists ul li{
-   			text-indent: 2rem;
-   			border-top: 1px solid #ccc;
-   			border-bottom: 1px solid #ccc;
-   		}
-   		.inputSearch{
-   			width: 100%;
-   			text-align: center;
-   		}
-   		.inputSearch .goodsInput,.inputSearch .goodsInputGo{
-   			width: 80%;
-   		}
-   		.inputSearch .search,.inputSearch .searchGo{
-		    width: 10%;
-		    margin-bottom: -15px;
-   		}
-   		.mui-bar.mui-bar-nav span{
-   		}
-   		.checkCities2{
-   			display: inline-block;
-   			width: 0.6rem;
-   			height: 0.6rem;
-   			border-right: 1px solid black;
-   			border-bottom: 1px solid black;
-   			margin-top: 18px;
-   			-webkit-transform: rotateZ(45deg);
-   		}
-   		.mui-bar.mui-bar-nav input{
-   			width: 70%;
-   			font-size: 0.6rem;
-   			text-indent: 2rem;
-   			background-color: #f7f7f7;
-   			outline: none;
-   			border: 0;
-   		}
-   		.mui-bar.mui-bar-nav img{
-			width: 1.5rem;
-		    margin-bottom: -8px;
-   		}
-   		.goodsClass{
-   			width: 100%;
-   			/*height: 30%;*/
-   			height: 15rem;
-   		}
-   		.goodsClass>div:nth-of-type(1){
-   			width: 60%;
-   			height: 90%;
-   			background-color: red;
-   			float: right;
-   		}
-   		.goodsClass>div:nth-of-type(2){
-   			width: 40%;
-   			height: 90%;
-   			background-color: yellow;
-   		}
-	   	.mui-bar-tab .mui-tab-item.mui-active {
-		    color: orange;
-		}
-		.mui-bar-tab .mui-tab-item {
-		    display: table-cell;
-		    overflow: hidden;
-		    width: 1%;
-		    height: 50px;
-		    text-align: center;
-		    vertical-align: middle;
-		    white-space: nowrap;
-		    text-overflow: ellipsis;
-		    color: gray;
-		}
+   		
    	</style>
 </head>
 <body>
+	<div><a class="toTop" href="#backToTop"><img src="images/toTop.png" alt=""></a></div>
 	<div class="wrapMask" style="display:none">
 		<div class="cityLists">
 			<p>当前位置</p>
@@ -144,15 +37,22 @@
 	    	<img class="search" src="images/search.png" alt="">
 		</div>
 	</div>
-	<div class="mui-off-canvas-wrap mui-draggable mui-scalable">
 	  <!-- 主页面容器 -->
 	  <div class="mui-inner-wrap mui-transitioning">
 	    <!-- 主页面标题 -->
+	    
+
+		<!-- 上导航栏的内容在这里编辑 -->
+		<!-- 上导航栏的内容在这里编辑 -->
 	    <header class="mui-bar mui-bar-nav">
 	      <span class="checkCities checkCities2"></span>
 	      <input class="goodsInput" type="text" placeholder="请输入您想要的商品">
 	      <img class="search" src="images/search.png" alt="">
 	    </header>
+		<!-- 上导航栏的内容在这里编辑 -->
+		<!-- 上导航栏的内容在这里编辑 -->
+
+
 	    <nav class="mui-bar mui-bar-tab">
 		    <a class="mui-tab-item mui-active menuLink">
 		        <span class="mui-icon mui-icon-home"></span>
@@ -175,197 +75,130 @@
 		        <span class="mui-tab-label">用户</span>
 		    </a>
 		</nav>
-	    <div class="mui-content mui-scroll-wrapper">
+	    <div id="backToTop" class="mui-content">
 	      <div class="mui-scroll">
 	        <!-- 主界面具体展示内容 -->
-	        <div class="goodsClass clearfix">
-				<div></div>
-				<div>
-					<div></div>
-					<div></div>
-				</div>
-				<p>1</p>
-				<p>2</p>
-				<p>3</p>
-				<p>4</p>
-				<p>5</p>
-				<p>6</p>
-				<p>7</p>
-				<p>8</p>
-				<p>9</p>
-				<p>10</p>
-				<p>11</p>
-				<p>12</p>
-				<p>13</p>
-				<p>14</p>
-				<p>15</p>
-				<p>16</p>
-				<p>17</p>
-				<p>18</p>
-				<p>19</p>
-				<p>20</p>
-				<p>21</p>
-				<p>22</p>
-				<p>23</p>
-				<p>24</p>
-				<p>25</p>
-				<p>26</p>
-				<p>27</p>
-				<p>28</p>
-				<p>29</p>
-				<p>30</p>
-				<p>31</p>
-				<p>32</p>
-				<p>33</p>
-				<p>34</p>
-				<p>35</p>
-				<p>36</p>
-				<p>37</p>
-				<p>38</p>
-				<p>39</p>
-				<p>40</p>
-				<p>41</p>
-				<p>42</p>
-				<p>43</p>
-				<p>44</p>
-				<p>45</p>
-				<p>46</p>
-				<p>47</p>
-				<p>48</p>
-				<p>49</p>
-				<p>50</p>
-				<p>51</p>
-				<p>52</p>
-				<p>53</p>
-				<p>54</p>
-				<p>55</p>
-				<p>56</p>
-				<p>57</p>
-				<p>58</p>
-				<p>59</p>
-				<p>60</p>
-				<p>61</p>
-				<p>62</p>
-				<p>63</p>
-				<p>64</p>
-				<p>65</p>
-				<p>66</p>
-				<p>67</p>
-				<p>68</p>
-				<p>69</p>
-				<p>70</p>
-				<p>71</p>
-				<p>72</p>
-				<p>73</p>
-				<p>74</p>
-				<p>75</p>
-				<p>76</p>
-				<p>77</p>
-				<p>78</p>
-				<p>79</p>
-				<p>80</p>
-				<p>81</p>
-				<p>82</p>
-				<p>83</p>
-				<p>84</p>
-				<p>85</p>
-				<p>86</p>
-				<p>87</p>
-				<p>88</p>
-				<p>89</p>
-				<p>90</p>
-				<p>91</p>
-				<p>92</p>
-				<p>93</p>
-				<p>94</p>
-				<p>95</p>
-				<p>96</p>
-				<p>97</p>
-				<p>98</p>
-				<p>99</p>
-				<p>100</p>
-	        </div>
+
+
+
+		<!-- 上导航栏的内容在这里编辑 -->
+		<!-- 上导航栏的内容在这里编辑 -->
+		<!-- 上导航栏的内容在这里编辑 -->
+		<!-- 上导航栏的内容在这里编辑 -->
+		<!-- 上导航栏的内容在这里编辑 -->
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+		<p>4</p>
+		<p>5</p>
+		<p>6</p>
+		<p>7</p>
+		<p>8</p>
+		<p>9</p>
+		<p>10</p>
+		<p>11</p>
+		<p>12</p>
+		<p>13</p>
+		<p>14</p>
+		<p>15</p>
+		<p>16</p>
+		<p>17</p>
+		<p>18</p>
+		<p>19</p>
+		<p>20</p>
+		<p>21</p>
+		<p>22</p>
+		<p>23</p>
+		<p>24</p>
+		<p>25</p>
+		<p>26</p>
+		<p>27</p>
+		<p>28</p>
+		<p>29</p>
+		<p>30</p>
+		<p>31</p>
+		<p>32</p>
+		<p>33</p>
+		<p>34</p>
+		<p>35</p>
+		<p>36</p>
+		<p>37</p>
+		<p>38</p>
+		<p>39</p>
+		<p>40</p>
+		<p>41</p>
+		<p>42</p>
+		<p>43</p>
+		<p>44</p>
+		<p>45</p>
+		<p>46</p>
+		<p>47</p>
+		<p>48</p>
+		<p>49</p>
+		<p>50</p>
+		<p>51</p>
+		<p>52</p>
+		<p>53</p>
+		<p>54</p>
+		<p>55</p>
+		<p>56</p>
+		<p>57</p>
+		<p>58</p>
+		<p>59</p>
+		<p>60</p>
+		<p>61</p>
+		<p>62</p>
+		<p>63</p>
+		<p>64</p>
+		<p>65</p>
+		<p>66</p>
+		<p>67</p>
+		<p>68</p>
+		<p>69</p>
+		<p>70</p>
+		<p>71</p>
+		<p>72</p>
+		<p>73</p>
+		<p>74</p>
+		<p>75</p>
+		<p>76</p>
+		<p>77</p>
+		<p>78</p>
+		<p>79</p>
+		<p>80</p>
+		<p>81</p>
+		<p>82</p>
+		<p>83</p>
+		<p>84</p>
+		<p>85</p>
+		<p>86</p>
+		<p>87</p>
+		<p>88</p>
+		<p>89</p>
+		<p>90</p>
+		<p>91</p>
+		<p>92</p>
+		<p>93</p>
+		<p>94</p>
+		<p>95</p>
+		<p>96</p>
+		<p>97</p>
+		<p>98</p>
+		<p>99</p>
+		<p>100</p>
+
+
+
+
+
 	      </div>
 	    </div>  
 	    <div class="mui-off-canvas-backdrop"></div>
 	  </div>
-	</div>
 </body>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" charset="utf-8">
-
-	var wrapMask=document.getElementsByClassName("wrapMask")[0];
-	var checkCities=document.getElementsByClassName("checkCities")[0];
-	var cityListsProvince=document.getElementsByClassName("cityLists")[0];
-	var cityLis=cityListsProvince.getElementsByTagName("li");
-	var cityLists=document.getElementsByClassName("cityLists")[1];
-	var cityLi=cityLists.getElementsByTagName("li");
-	var goodsInput=document.getElementsByClassName("goodsInput")[1];
-	var search=document.getElementsByClassName("search")[1];
-	var inputSearch=document.getElementsByClassName("inputSearch")[0];
-
-	var menuLink=document.getElementsByClassName("menuLink");
-	var menuLinkArr=["index.html","member.html","classify.html","shoppingCart.html","mine.html"];
-
-	mui.init();
-	// console.log("ok");
-
-	checkCities.addEventListener("touchend",function(){
-		inputSearch.style.display="none";
-		cityLists.style.display="none";
-		cityListsProvince.style.display="block";
-		wrapMask.style.display="block";
-	});
-
-	for(i=0;i<cityLis.length;i++){
-		cityLis[i].index=i;
-		cityLis[i].addEventListener("touchend",function(){
-			for(j=0;j<cityLis.length;j++){
-				cityLis[j].style.backgroundColor="#f7f7f7";
-			}
-			cityLis[this.index].style.backgroundColor="#ccc";
-			cityListsProvince.style.display="none";
-			cityLists.style.display="block";
-			cityLi[0].innerText=cityLis[this.index].innerText;
-		});	
-	}
-
-	for(i=0;i<cityLi.length;i++){
-		cityLi[i].index=i;
-		cityLi[i].addEventListener("touchend",function(){
-			wrapMask.style.display="none";
-			checkCities.innerText=cityLi[this.index].innerText;
-			checkCities.setAttribute("class","checkCities");
-		});	
-	}
-
-	// console.log(goodsInput);
-	// console.log(search);
-	// 
-  	goodsInput.addEventListener("touchend",function(){
-		inputSearch.style.display="none";
-			cityLists.style.display="none";
-			cityListsProvince.style.display="none";
-  			wrapMask.style.display="block";
-  			inputSearch.style.display="block";
-  			goodsInput.setAttribute("class","goodsInputGo");
-  			search.setAttribute("class","searchGo");
-		});	
-  	search.addEventListener("touchend",function(){
-			cityLists.style.display="none";
-			cityListsProvince.style.display="none";
-  			wrapMask.style.display="block";
-  			inputSearch.style.display="block";
-  			goodsInput.setAttribute("class","goodsInputGo");
-  			search.setAttribute("class","searchGo");
-		});	
-
-	for(i=0;i<menuLink.length;i++){
-		menuLink[i].index=i;
-		menuLink[i].addEventListener("touchend",function(){
-			window.location.href=menuLinkArr[this.index];
-		});	
-	}
-
 
 </script>
 </html>
