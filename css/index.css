@@ -1,0 +1,85 @@
+/*index主页样式*/
+.wrapMask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:92%;
+	background-color: #f7f7f7;
+	z-index: 3;
+}
+.wrapMask>div{
+	display: none;
+	margin-top: 15px;
+}
+.cityLists{
+	line-height: 40px;
+	font-size: 14px;
+	color:black; 
+}
+.cityLists p{
+	color:black; 
+	text-indent: 2rem;
+	border-bottom: 1px solid #ccc;
+}
+.cityLists>p:nth-of-type(2){
+	background-color: #ccc;
+	margin-top: 3rem;
+}
+.cityLists ul{
+	list-style: none;
+	margin-left: -3rem;
+}
+.cityLists ul li{
+	text-indent: 2rem;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.inputSearch{
+	width: 100%;
+	text-align: center;
+}
+.inputSearch .goodsInput,.inputSearch .goodsInputGo{
+	width: 80%;
+}
+.inputSearch .search,.inputSearch .searchGo{
+ width: 10%;
+ margin-bottom: -15px;
+}
+.checkCities2{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 18px;
+	-webkit-transform: rotateZ(45deg);
+}
+.mui-bar.mui-bar-nav input{
+	width: 70%;
+	font-size: 0.6rem;
+	text-indent: 2rem;
+	background-color: #f7f7f7;
+	outline: none;
+	border: 0;
+}
+.mui-bar.mui-bar-nav img{
+width: 1.5rem;
+ margin-bottom: -8px;
+}
+.goodsClass{
+	width: 100%;
+	height: 15rem;
+}
+.goodsClass>div:nth-of-type(1){
+	width: 60%;
+	height: 90%;
+	background-color: red;
+	float: right;
+}
+.goodsClass>div:nth-of-type(2){
+	width: 40%;
+	height: 90%;
+	background-color: yellow;
+}
+/*index主页样式*/
