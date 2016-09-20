@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+   	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+   	<style type="text/css">
+   		.mui-bar.mui-bar-nav span{
+   			display: inline-block;
+   			width: 0.6rem;
+   			height: 0.6rem;
+   			border-right: 1px solid black;
+   			border-bottom: 1px solid black;
+   			margin-top: 18px;
+   			-webkit-transform: rotateZ(45deg);
+   		}
+   		.mui-bar.mui-bar-nav input{
+   			width: 70%;
+   			font-size: 0.6rem;
+   			text-indent: 2rem;
+   			background-color: #f7f7f7;
+   			outline: none;
+   			border: 0;
+   		}
+   		.mui-bar.mui-bar-nav img{
+			width: 1.5rem;
+		    margin-bottom: -8px;
+   		}
+	   	.mui-bar-tab .mui-tab-item.mui-active {
+		    color: orange;
+		}
+		.mui-bar-tab .mui-tab-item {
+		    display: table-cell;
+		    overflow: hidden;
+		    width: 1%;
+		    height: 50px;
+		    text-align: center;
+		    vertical-align: middle;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    color: gray;
+		}
+   	</style>
+</head>
+<body>
+	<div class="mui-off-canvas-wrap mui-draggable mui-scalable">
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap mui-transitioning">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <span></span>
+	      <input type="text" placeholder="请输入您想要的商品">
+	      <img src="images/search.png" alt="">
+	    </header>
+	    <nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active menuLink">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		   	<a class="mui-tab-item menuLink">
+		        <span class="mui-icon iconfont icon-yaoqingjiangli"></span>
+		        <span class="mui-tab-label">会员杂锦</span>
+		    </a>
+		    <a class="mui-tab-item menuLink">
+		        <span class="mui-icon iconfont icon-zhanghuzonglan"></span>
+		        <span class="mui-tab-label">分类</span>
+		    </a>
+		    <a class="mui-tab-item menuLink">
+		        <span class="mui-icon iconfont icon-gouwuche"></span>
+		        <span class="mui-tab-label">购物车</span>
+		    </a>
+		      <a class="mui-tab-item menuLink">
+		        <span class="mui-icon iconfont icon-gerenziliao"></span>
+		        <span class="mui-tab-label">用户</span>
+		    </a>
+		</nav>
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+	        
+	      </div>
+	    </div>  
+	    <div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+	var menuLink=document.getElementsByClassName("menuLink");
+
+	var menuLinkArr=["index.html","member.html","classify.html","shoppingCart.html","mine.html"];
+
+  	mui.init();
+
+	for(i=0;i<menuLink.length;i++){
+		menuLink[i].index=i;
+		menuLink[i].addEventListener("touchend",function(){
+			console.log(menuLinkArr[this.index]);
+			window.location.href=menuLinkArr[this.index];
+		});	
+	}
+
+
+</script>
+</html>
