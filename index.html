@@ -10,7 +10,123 @@
     <link href="css/index.css" rel="stylesheet"/>
    	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
    	<style type="text/css">
+<<<<<<< Updated upstream
    		
+=======
+		.clearfix:after{
+			display: block;
+			content: " ";
+			height: 0;
+			clear: both;
+			overflow: hidden;
+		}
+   		html,body,.wrapMask{
+			width: 100%;
+			height: 100%;
+   		}
+   		.wrapMask{
+   			position: absolute;
+   			top: 0;
+   			left: 0;
+   			width: 100%;
+   			height:92%;
+   			background-color: #f7f7f7;
+   			z-index: 3;
+   		}
+   		.wrapMask>div{
+   			display: none;
+   			margin-top: 15px;
+   		}
+   		.cityLists{
+   			line-height: 40px;
+   			font-size: 14px;
+   			color:black; 
+   		}
+   		.cityLists p{
+   			color:black; 
+   			text-indent: 2rem;
+   			border-bottom: 1px solid #ccc;
+   		}
+   		.cityLists>p:nth-of-type(2){
+   			background-color: #ccc;
+   			margin-top: 3rem;
+   		}
+   		.cityLists ul{
+   			list-style: none;
+   			margin-left: -3rem;
+   		}
+   		.cityLists ul li{
+   			text-indent: 2rem;
+   			border-top: 1px solid #ccc;
+   			border-bottom: 1px solid #ccc;
+   		}
+   		.inputSearch{
+   			width: 100%;
+   			text-align: center;
+   		}
+   		.inputSearch .goodsInput,.inputSearch .goodsInputGo{
+   			width: 80%;
+   		}
+   		.inputSearch .search,.inputSearch .searchGo{
+		    width: 10%;
+		    margin-bottom: -15px;
+   		}
+   		.mui-bar.mui-bar-nav span{
+   		}
+   		.checkCities2{
+   			display: inline-block;
+   			width: 0.6rem;
+   			height: 0.6rem;
+   			border-right: 1px solid black;
+   			border-bottom: 1px solid black;
+   			margin-top: 18px;
+   			-webkit-transform: rotateZ(45deg);
+   		}
+   		.mui-bar.mui-bar-nav input{
+   			width: 70%;
+   			font-size: 0.6rem;
+   			text-indent: 2rem;
+   			background-color: #f7f7f7;
+   			outline: none;
+   			border: 0;
+   		}
+   		.mui-bar.mui-bar-nav img{
+			width: 1.5rem;
+		    margin-bottom: -8px;
+   		}
+   		.goodsClass{
+   			width: 100%;
+   			/*height: 30%;*/
+   			height: 15rem;
+   		}
+   		.goodsClass>div:nth-of-type(1){
+   			width: 60%;
+   			height: 90%;
+   			background-color: red;
+   			float: right;
+   		}
+   		.goodsClass>div:nth-of-type(2){
+   			width: 40%;
+   			height: 90%;
+   			background-color: yellow;
+   		}
+	   	.mui-bar-tab .mui-tab-item.mui-active {
+		    color: orange;
+		}
+		.mui-bar-tab .mui-tab-item {
+		    display: table-cell;
+		    overflow: hidden;
+		    width: 1%;
+		    height: 50px;
+		    text-align: center;
+		    vertical-align: middle;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    color: gray;
+		}
+		/*.mui-slider{width: 100%;height: 300px;}*/
+		.mui-slider-item{width: 100%;height: 300px;}
+>>>>>>> Stashed changes
    	</style>
 </head>
 <body>
@@ -77,6 +193,60 @@
 		</nav>
 	    <div id="backToTop" class="mui-content">
 	      <div class="mui-scroll">
+	      	<!--大图滚动-->
+	      	<div id="slider" class="mui-slider" >
+	      	  <div class="mui-slider-group mui-slider-loop">
+	      	    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	      	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper05.jpg">
+	      	      </a>
+	      	    </div>
+	      	    <!-- 第一张 -->
+	      	    <div class="mui-slider-item">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper01.jpg">
+	      	      </a>
+	      	    </div>
+	      	    <!-- 第二张 -->
+	      	    <div class="mui-slider-item">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper02.jpg">
+	      	      </a>
+	      	    </div>
+	      	    <!-- 第三张 -->
+	      	    <div class="mui-slider-item">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper03.jpg">
+	      	      </a>
+	      	    </div>
+	      	    <!-- 第四张 -->
+	      	    <div class="mui-slider-item">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper04.jpg">
+	      	      </a>
+	      	    </div>
+	      	      <!-- 第5张 -->
+	      	    <div class="mui-slider-item">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper05.jpg">
+	      	      </a>
+	      	    </div>
+	      	    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	      	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      	      <a href="#">
+	      	        <img src="images/indexswiper01.jpg">
+	      	      </a>
+	      	    </div>
+	      	  </div>
+	      	  <div class="mui-slider-indicator">
+	      	    <div class="mui-indicator mui-active"></div>
+	      	    <div class="mui-indicator"></div>
+	      	    <div class="mui-indicator"></div>
+	      	    <div class="mui-indicator"></div>
+	      	    <div class="mui-indicator"></div>
+	      	  </div>
+	      	</div>
 	        <!-- 主界面具体展示内容 -->
 
 
@@ -191,6 +361,7 @@
 
 
 
+<<<<<<< Updated upstream
 	      </div>
 	    </div>  
 	    <div class="mui-off-canvas-backdrop"></div>
@@ -200,5 +371,12 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" charset="utf-8">
 
+=======
+//获得slider插件对象
+var gallery = mui('.mui-slider');
+gallery.slider({
+  interval:1000//自动轮播周期，若为0则不自动播放，默认为0；
+});
+>>>>>>> Stashed changes
 </script>
 </html>
